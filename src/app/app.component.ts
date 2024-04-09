@@ -37,10 +37,10 @@ export class AppComponent {
   onSubmit(value: string) {
     if(this.isEven(value)){
       this.evenLengthWords.push(value);
-      console.log(this.evenLengthWords)
+      // console.log(this.evenLengthWords)
     } else if(this.isOdd(value)){
       this.oddLengthWords.push(value);
-      console.log(this.oddLengthWords)
+      // console.log(this.oddLengthWords)
     }
   }
 

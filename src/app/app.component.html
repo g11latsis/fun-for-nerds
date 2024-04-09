@@ -1,10 +1,11 @@
 <div class="container d-flex flex-column gap-4">
   <div class="bg-primary p-4 mt-4 rounded-3 text-center">
-    <h2 class="text-dark font-weight-bold">{{title}}</h2>
+    <h2 class="text-dark font-weight-bold">{{ title }}</h2>
   </div>
   <app-text-input (inputChange)="onInputChange($event)" (submit)="onSubmit($event)"></app-text-input>
   <div class="d-flex justify-content-between">
-      <app-even-length-words [evenLengthWords]="evenLengthWords" [inputValue]="evenValue"></app-even-length-words>
-      <app-odd-length-words  [oddLengthWords]="oddLengthWords" [inputValue]="oddValue" ></app-odd-length-words>
+    <app-even-length-words [evenLengthWords]="evenLengthWords" [inputValue]="evenValue"></app-even-length-words>
+    <app-svg-display [evenValue]="evenValue" [oddValue]="oddValue"></app-svg-display>
+    <app-odd-length-words [oddLengthWords]="oddLengthWords" [inputValue]="oddValue"></app-odd-length-words>
   </div>
 </div>
